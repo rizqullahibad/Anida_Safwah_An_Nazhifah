@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Web Page</title>
+</head>
+<body>
+
+    <div align="center">
+        <td><label for="div"></label></td>
+        <a href="#">Home</a> | 
+        <a href="#">Generate Link</a> | 
+        <a href="#">Transaction History</a> | 
+        <a href="#">Policy</a> | 
+        <a href="#">Logout</a>
+    </div>
+
+    <hr>
+
+    <form>
+        <table border="0" cellpadding="5" align="center">
+            <tr>
+                <td valign="top" align="center" width="200">
+                    <svg width="150" height="150" style="border: 1px solid black;">
+                        <line x1="0" y1="0" x2="150" y2="150" stroke="black" stroke-width="1" />
+                        <line x1="150" y1="0" x2="0" y2="150" stroke="black" stroke-width="1" />
+                    </svg>
+                    <br><br>
+                    <input type="button" value="Upload Picture">
+                </td>
+
+                <td valign="top">
+                    <table border="0" cellpadding="5">
+                        <tr>
+                            <td><label for="Barang pesanan">Barang pesanan :</label></td>
+                            <td><input type="text" id="Barang pesanan." size="40" placeholder="Silahkan masukkan pesanan anda"></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><label for="desk">Deskripsi :</label></td>
+                            <td>
+                                <textarea 
+                                id="desc" 
+                                rows="4" 
+                                cols="38"
+                                placeholder="Masukkan tahun barang anda."></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="acc_num">Account number :</label></td>
+                            <td><input type="number" id="acc_num" size="40" placeholder="Masukkan nomor anda."></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bank">Bank :</label></td>
+                            <td>
+                                <select id="bank">
+                                    <option value="Pilih bank anda">Pilih bank anda</option>
+                                    <option value="BRI">BRI</option>
+                                    <option value="Mandiri">Mandiri</option>
+                                    <option value="BCA">BCA</option>
+                                    
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="acc_holder">Account Holder :</label></td>
+                            <td><input type="text" id="acc_holder" size="40" placeholder="Silahkan masukkan Nama anda."></td>
+                        </tr>
+                        <tr>
+                            <td valign="top"><label for="transaction">Transaction :</label></td>
+                            <td>
+                                <select id="transaction">
+                                    <option value="-">-</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <br>
+                                <small>* Jika transaksi untuk 3 orang, pilih 3 dari list yang ada.</small>
+                                <br><br>
+                                <input type="checkbox" id="chk_mobile">
+                                <label for="chk_mobile">Send to Mobile Phone</label>
+                                <br>
+                                <input type="checkbox" id="chk_email">
+                                <label for="chk_email">Send to Email</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="mobile_num">Kirim ke nomor :</label></td>
+                            <td><input type="text" id="mobile_num" size="40" placeholder="Masukkan nomor anda"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email_addr">Kirim ke email :</label></td>
+                            <td><input type="text" id="email_addr" size="40" placeholder="Masukkan email anda."></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <br>
+                                <input type="submit" value="Generate Nabr Link">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
